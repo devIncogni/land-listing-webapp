@@ -1,0 +1,36 @@
+{
+  "name": "template-repo-web-dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --config webpack.dev.js",
+    "setup-deploy": "git branch gh-pages",
+    "predeploy": "git checkout gh-pages && git merge main --no-edit && npm run build",
+    "deploy": "git add dist -f && git commit -m \"Deployment commit\" && git subtree push --prefix dist origin gh-pages",
+    "postdeploy": "git checkout main && echo \"Deployment Success\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "prettier": "3.5.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.6",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0",
+    "webpack-merge": "^6.0.1"
+  }
+}
