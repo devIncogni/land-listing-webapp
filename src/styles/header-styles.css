@@ -1,6 +1,7 @@
 .header-extended-menu-container {
     display: flex;
     flex-direction: column;
+    padding: 1rem 0;
 
     background: white;
 
@@ -43,7 +44,7 @@
 /* #region Header Bar Styling */
 .header {
     display: flex;
-    padding: 1rem;
+    padding: 0 1rem;
     /* justify-content: center; */
     align-items: center;
     justify-content: space-between;
@@ -92,7 +93,7 @@
     /* border: 1px solid black; */
     border-radius: 0.25rem;
 
-    transition: background cubic-bezier(.4,0,.2,1) 0.15s;
+    transition: background cubic-bezier(.4, 0, .2, 1) 0.15s;
 
     cursor: pointer;
 }
@@ -120,19 +121,31 @@
 /* #region Extended menu styling */
 
 .extended-menu {
-    /* border: 1px solid black; */
-    padding-bottom: 1rem;
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    transform: translateY(-0.25rem);
+    transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.3s ease;
 
     display: flex;
     flex-direction: column;
 }
 
+.extended-menu.expanded {
+    max-height: 20rem;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.extended-menu-padding {
+    padding: 0.5rem;
+}
+
 .extended-menu .links {
-    /* border: 1px solid black; */
     cursor: pointer;
     padding: 0.5rem 1rem;
 
-    transition: background cubic-bezier(.4,0,.2,1) 0.15s;
+    transition: background cubic-bezier(.4, 0, .2, 1) 0.15s;
 }
 
 .extended-menu .links:hover {

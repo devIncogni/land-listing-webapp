@@ -1,7 +1,7 @@
 function toggleExtendedNavMenu() {
   const extendedMenu = document.querySelector(".extended-menu");
 
-  extendedMenu.classList.toggle("hidden");
+  extendedMenu.classList.toggle("expanded");
 }
 
 const headerHamburger = document.querySelector(".hamburger-menu");
