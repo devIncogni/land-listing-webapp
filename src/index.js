@@ -1,3 +1,4 @@
 // CSS Imports
-import "./Styles/styles.css";
-import "./Styles/default-reset.css";
+import "./styles/styles.css";
+import "./styles/default-reset.css";
+import "./styles/header-styles.css"
