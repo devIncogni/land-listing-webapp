@@ -53,6 +53,7 @@
     display: flex;
     align-items: center;
     gap: 0.25rem;
+    cursor: pointer;
 }
 
 .logo-icon {
@@ -136,7 +137,6 @@
 
 .extended-menu .links:hover {
     background: rgba(255, 255, 255, 0.18);
-
 }
 
 /* #endregion Extended menu styling */
