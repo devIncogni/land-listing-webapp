@@ -1,3 +1,10 @@
+:root {
+    /* Header Vars */
+    --transparent-bg-font-color: white;
+    --light-mode-bg-font-color: black;
+    --hover-highlight-color: #008cff33;
+}
+
 body {
     background: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png);
     background-size: cover;
