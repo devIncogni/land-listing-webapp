@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 1rem 0;
 
-    background: white;
+    background: var(--light-mode-bg-color-primary);
     transition: background 0.3s ease;
 
     position: sticky;
@@ -31,16 +31,15 @@
 }
 
 .transparent-container .bar {
-    background-color: white;
+    background-color: var(--transparent-bg-font-color);
 }
 
 .transparent-container .logo-icon {
-    background: url(../assets/logo-white.png);
+    background: url(../assets/logo-white-160x160.png);
     background-size: contain;
 }
 
 /* #endregion Styles when header is transparent */
-
 
 /* #region Header Bar Styling */
 .header {
@@ -60,7 +59,7 @@
 
 .logo-icon {
 
-    background: url(../assets/logo-black.png);
+    background: url(../assets/logo-black-160x160.png);
     background-size: contain;
 
     object-fit: cover;
@@ -101,9 +100,9 @@
     cursor: pointer;
 }
 
-.hamburger-menu:hover {
+/* .hamburger-menu:hover {
     background: var(--hover-highlight-color);
-}
+} */
 
 .hamburger {
     position: relative;
@@ -120,6 +119,7 @@
     transition: all 0.3s ease-in-out;
     left: 0;
     border-radius: 0.25rem;
+    background-color: var(--light-mode-bg-font-color);
 }
 
 .bar:nth-child(1) {
@@ -154,12 +154,12 @@
 
 /* #endregion Hamburger Menu Styling */
 
-
 /* #region Extended menu styling */
 
 .extended-menu {
     max-height: 0;
     opacity: 0;
+    overflow: hidden;
     padding: 0;
     transform: translateY(-0.25rem);
     transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.3s ease;
@@ -172,6 +172,7 @@
     max-height: 20rem;
     opacity: 1;
     transform: translateY(0);
+    /* overflow: auto; */
 }
 
 .extended-menu-padding {

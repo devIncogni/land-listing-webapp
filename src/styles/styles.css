@@ -3,6 +3,7 @@
     --transparent-bg-font-color: white;
     --light-mode-bg-font-color: black;
     --hover-highlight-color: #008cff33;
+    --light-mode-bg-color-primary: white;
 }
 
 body {

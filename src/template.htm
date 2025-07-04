@@ -4,9 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plot Vista</title>
+    <!-- Start Loader Styles -->
+    <style>
+      .loader-container {
+        position: fixed;
+        inset: 0;
+        
+
+        background: rgb(255, 255, 255);
+        opacity: 1;
+
+        z-index: 99999;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+      }
+
+      .loader-container.removed {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      .loader {
+        width: 45px;
+        aspect-ratio: 1;
+        --c: no-repeat linear-gradient(#000 0 0);
+        background:
+          var(--c) 0% 50%,
+          var(--c) 50% 50%,
+          var(--c) 100% 50%;
+        background-size: 20% 100%;
+        animation: l1 1s infinite linear;
+      }
+      @keyframes l1 {
+        0% {
+          background-size:
+            20% 100%,
+            20% 100%,
+            20% 100%;
+        }
+        33% {
+          background-size:
+            20% 10%,
+            20% 100%,
+            20% 100%;
+        }
+        50% {
+          background-size:
+            20% 100%,
+            20% 10%,
+            20% 100%;
+        }
+        66% {
+          background-size:
+            20% 100%,
+            20% 100%,
+            20% 10%;
+        }
+        100% {
+          background-size:
+            20% 100%,
+            20% 100%,
+            20% 100%;
+        }
+      }
+    </style>
+    <!-- End Loader Styles -->
   </head>
   <body>
-    <div class="wrapper">
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <div class="wrapper" style="display: none">
       <div class="header-extended-menu-container transparent-container">
         <div class="header">
           <a href="#" class="logo">
