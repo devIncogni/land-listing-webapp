@@ -32,7 +32,8 @@ headerHamburger.addEventListener("click", () => {
   toggleHamburgerCross();
 });
 document.addEventListener(`scroll`, () => {
-  if (window.scrollY < 100) {
+  const extendedMenu = document.querySelector(".extended-menu");
+  if (window.scrollY < 100 && !extendedMenu.classList.contains("expanded")) {
     addHeaderTransparency();
   } else {
     removeHeaderTransparency();
