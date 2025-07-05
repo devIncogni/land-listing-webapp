@@ -4,17 +4,23 @@
     --light-mode-bg-font-color: black;
     --hover-highlight-color: #008cff33;
     --light-mode-bg-color-primary: white;
+
+    --scroll-bar-width: 7px;
 }
 
-body {
+/* body {
     background: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png);
     background-size: cover;
     background-position: center;
     min-height: 150vh;
-    /* position: fixed; */
+    position: fixed;
+} */
+
+body {
+    overflow: hidden;
 }
 
-/* .wrapper {
+.wrapper {
     background: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png);
 
     background-size: cover;
@@ -23,4 +29,29 @@ body {
     
     height: 100vh;
     overflow: auto;
-} */
+}
+
+/* #region Scroll bar styiling */
+::-webkit-scrollbar {
+    width: var(--scroll-bar-width);
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #869faf;
+    border-radius: 10px;
+    /* border: 1px solid transparent; */
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #929292;
+}
+
+.content {
+    margin-top: 20rem;
+}
+/* #endregion Scroll bar styiling */
