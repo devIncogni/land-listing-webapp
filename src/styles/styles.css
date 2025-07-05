@@ -16,19 +16,16 @@
     position: fixed;
 } */
 
-body {
-    overflow: hidden;
-}
-
 .wrapper {
     background: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png);
 
     background-size: cover;
     background-position: center;
     position: relative;
-    
+
     height: 100vh;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* #region Scroll bar styiling */
@@ -54,4 +51,5 @@ body {
 .content {
     margin-top: 20rem;
 }
+
 /* #endregion Scroll bar styiling */
