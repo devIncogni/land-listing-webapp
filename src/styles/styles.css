@@ -8,15 +8,16 @@
     --scroll-bar-width: 7px;
 }
 
-/* body {
-    background: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png);
+body {
+    /* background: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png);
     background-size: cover;
-    background-position: center;
-    min-height: 150vh;
-    position: fixed;
-} */
+    background-position: center; */
+    min-height: 100vh;
+    /* position: fixed; */
+    position: relative;
+}
 
-.wrapper {
+.slide-show-container {
     background: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png);
 
     background-size: cover;
@@ -24,8 +25,8 @@
     position: relative;
 
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
+
+    z-index: -1;
 }
 
 /* #region Scroll bar styiling */

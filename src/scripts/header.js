@@ -1,6 +1,3 @@
-const headerHamburger = document.querySelector(".hamburger-menu");
-const wrapper = document.querySelector(".wrapper");
-
 function addHeaderTransparency() {
   document
     .querySelector(".header-extended-menu-container")
@@ -19,7 +16,7 @@ function toggleExtendedNavMenu() {
 
   if (extendedMenu.classList.contains("expanded")) {
     removeHeaderTransparency();
-  } else if (wrapper.scrollTop < 100) {
+  } else if (window.scrollY < 100) {
     addHeaderTransparency();
   }
 }
@@ -28,14 +25,16 @@ function toggleHamburgerCross() {
   document.querySelector(".hamburger").classList.toggle("cross");
 }
 
+const headerHamburger = document.querySelector(".hamburger-menu");
+
 headerHamburger.addEventListener("click", () => {
   toggleExtendedNavMenu();
   toggleHamburgerCross();
 });
 
-wrapper.addEventListener(`scroll`, () => {
+document.addEventListener(`scroll`, () => {
   const extendedMenu = document.querySelector(".extended-menu");
-  if (wrapper.scrollTop < 100 && !extendedMenu.classList.contains("expanded")) {
+  if (window.scrollY < 100 && !extendedMenu.classList.contains("expanded")) {
     addHeaderTransparency();
   } else {
     removeHeaderTransparency();

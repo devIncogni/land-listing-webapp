@@ -24,6 +24,7 @@
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7px);
     color: var(--transparent-bg-font-color);
+    transition: background 0.5s ease-in-out;
 }
 
 .transparent-container a {
@@ -71,12 +72,14 @@
 .logo-text {
     display: flex;
     flex-direction: column;
-    line-height: 1;
+    justify-content: center;
+    align-items: start;
+    line-height: 0.75;
     gap: 0.25rem;
 }
 
 .agency-name {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: bold;
 }
 
@@ -162,29 +165,31 @@
 .extended-menu {
     max-height: 0;
     opacity: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0;
     transform: translateY(-1.25rem);
-    transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.4s ease;
-
-    display: flex;
-    flex-direction: column;
+    transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.8s ease;
+    /* justify-content: ; */
 }
 
 .extended-menu.expanded {
-    max-height: 20rem;
+    max-height: 100vh;
+    /* height: 100vh; */
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0);    
     /* overflow: auto; */
 }
 
 .extended-menu-padding {
-    padding: 0.5rem;
+    padding-top: 0.75rem;
+    /* height: calc(100vh - 80px); */
 }
 
 .extended-menu .links {
+    font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem 1rem;
+    color: black;
 
     transition: background cubic-bezier(.4, 0, .2, 1) 0.15s;
 }
