@@ -7,16 +7,20 @@
 }
 
 body {
-    /* background: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png);
-    background-size: cover;
-    background-position: center; */
-    min-height: 150vh;
-}
-
-.wrapper {
     background: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png);
     background-size: cover;
     background-position: center;
-    position: relative;
-    min-height: 100vh;
+    min-height: 150vh;
+    /* position: fixed; */
 }
+
+/* .wrapper {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png);
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    height: 100vh;
+    overflow: auto;
+} */
