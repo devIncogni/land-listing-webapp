@@ -8,6 +8,6 @@ import "./scripts/header";
 import "./scripts/loader";
 import Rellax from "rellax";
 
-const rel = new Rellax('.slide-show-container')
-const rel1 = new Rellax('.heading')
+const rel = new Rellax('.slide-show-img.active')
+// const rel1 = new Rellax('.heading')
 

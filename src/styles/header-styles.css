@@ -21,7 +21,7 @@
 
 /* #region Styles when header is transparent */
 .transparent-container {
-    background: rgba(0, 0, 0, 0.25);
+    background: transparent;
     backdrop-filter: blur(7px);
     color: var(--transparent-bg-font-color);
     transition: background 0.5s ease-in-out;
@@ -46,7 +46,7 @@
 .header {
     display: flex;
     padding: 0 1rem;
-    /* justify-content: center; */
+
     align-items: center;
     justify-content: space-between;
 }
@@ -54,7 +54,8 @@
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.5rem;
+
     cursor: pointer;
     animation: header-animation 0.4s ease-in-out;
 }
@@ -62,9 +63,9 @@
 .logo-icon {
 
     background: url(../assets/logo-black-160x160.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 
-    object-fit: cover;
     width: 3rem;
     aspect-ratio: 1;
 }
@@ -74,17 +75,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    line-height: 0.75;
-    gap: 0.25rem;
+    line-height: 0.65;
+    gap: 0.5rem;
 }
 
 .agency-name {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .punch-line {
     font-size: 0.75rem;
+    padding-left: 1px;
 }
 
 .nav-links {
@@ -113,7 +115,7 @@
 .hamburger {
     position: relative;
     height: 18px;
-    width: 24px;
+    width: 27px;
 }
 
 .bar {
@@ -133,7 +135,6 @@
 }
 
 .bar:nth-child(2) {
-    /* top: 18px; */
     top: 8px;
 }
 
@@ -144,13 +145,13 @@
 .hamburger.cross .bar:first-child {
     transform: rotate(45deg);
     left: 3.5px;
-    top: -0.5px;
+    top: -1.5px;
 }
 
 .hamburger.cross .bar:last-child {
     transform: rotate(-45deg);
     left: 3.5px;
-    bottom: -0.5px;
+    bottom: -1.5px;
 }
 
 .hamburger.cross .bar:nth-child(2) {
@@ -174,15 +175,12 @@
 
 .extended-menu.expanded {
     max-height: 100vh;
-    /* height: 100vh; */
     opacity: 1;
-    transform: translateY(0);    
-    /* overflow: auto; */
+    transform: translateY(0);
 }
 
 .extended-menu-padding {
     padding-top: 0.75rem;
-    /* height: calc(100vh - 80px); */
 }
 
 .extended-menu .links {
