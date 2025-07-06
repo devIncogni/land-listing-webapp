@@ -8,7 +8,6 @@ import "./styles/util-styles.css";
 import "./scripts/header";
 import "./scripts/loader";
 import "./scripts/slideshow";
-import Rellax from "rellax";
 
-Rellax(".slide-show-img.active");
+// Rellax(".slide-show-img.active");
 // const rel1 = new Rellax('.heading')
