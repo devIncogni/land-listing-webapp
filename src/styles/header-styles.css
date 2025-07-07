@@ -4,7 +4,7 @@
     padding: 1rem 0;
 
     background: var(--light-mode-bg-color-primary);
-    transition: background 0.3s ease;
+    transition: background 0.3s;
 
     position: fixed;
     top: 0;
@@ -24,7 +24,7 @@
     background: transparent;
     backdrop-filter: blur(7px);
     color: var(--transparent-bg-font-color);
-    transition: background 0.5s ease-in-out;
+    transition: background 0.3s;
 }
 
 .transparent-container a {
@@ -169,7 +169,7 @@
     overflow: hidden;
     padding: 0;
     transform: translateY(-1.25rem);
-    transition: max-height 0.5s ease-in-out, opacity 0.3s ease, transform 0.4s ease;
+    transition: max-height 0.2s ease, opacity 0.5s ease, transform 0.4s ease;
     /* justify-content: ; */
 }
 
@@ -177,6 +177,7 @@
     max-height: 100vh;
     opacity: 1;
     transform: translateY(0);
+    transition: max-height 0.5s ease;
 }
 
 .extended-menu-padding {

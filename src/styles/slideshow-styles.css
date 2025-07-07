@@ -46,9 +46,37 @@
     opacity: 1;
 }
 
-h1 {
+.heading {
     will-change: transform;
     transform: translateZ(0);
 
-    text-shadow: white 0 0 11px;
+    /* font-size: 2rem; */
+
+    color: white;
+    text-shadow: black 0 0 11px;
+
+    text-align: center;
+}
+
+h1.heading {
+    font-size: 3.25rem;
+    line-height: 1.15;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.125rem;
+    color: #fffffff1;
+}
+
+h2.heading {
+    font-family: 'Times New Roman', Times, serif;
+    color: #dddddd;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+p.heading {
+    color: #fdf8f0;
+}
+
+.hero-text {
+    max-width: 70%;
 }
