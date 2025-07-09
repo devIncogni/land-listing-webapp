@@ -25,10 +25,34 @@
     padding: 0 1rem;
     margin: auto;
     max-width: 1400px;
+
     display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+
     justify-content: center;
     justify-items: center;
+}
+
+.view-all-btn-container {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    width: 90%;
+    max-width: 1440px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.view-all-btn-container > button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: white;
+    /* border: none; */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    color: black;
 }
 
 /* #endregion card container styling */
@@ -111,7 +135,7 @@
     margin-bottom: 1rem;
 }
 
-.tags > p {
+.tags>p {
     background-color: rgba(215, 215, 215, 0.3);
 
     color: rgb(50, 50, 50);
@@ -129,7 +153,7 @@
     width: 100%;
 }
 
-.card-button-container > button {
+.card-button-container>button {
     border: none;
     width: 100%;
     color: white;
@@ -141,7 +165,7 @@
     cursor: pointer;
 }
 
-.card-button-container > button > p {
+.card-button-container>button>p {
     line-height: 1.25;
 }
 
