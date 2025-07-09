@@ -1,7 +1,7 @@
 /* #region card container styling */
 
 .land-card-holder {
-    padding: 4rem 0;
+    padding-top: 4rem;
     background-color: inherit;
 }
 
@@ -46,13 +46,15 @@
 }
 
 .view-all-btn-container > button {
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     font-size: 1rem;
     background-color: white;
     /* border: none; */
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 0.5rem;
     color: black;
+
+    cursor: pointer;
 }
 
 /* #endregion card container styling */
