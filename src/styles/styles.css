@@ -3,7 +3,7 @@
     --transparent-bg-font-color: white;
     --light-mode-bg-font-color: black;
     --hover-highlight-color: #008cff33;
-    --light-mode-bg-color-primary: white;
+    --light-mode-bg-color-primary: rgba(255, 255, 255, 0.90);
 
     --scroll-bar-width: 7px;
 }
@@ -13,6 +13,8 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
     z-index: 0;
+
+    background-color: #fcfbf8;
 }
 
 /* #region Scroll bar styiling */

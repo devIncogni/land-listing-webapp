@@ -8,9 +8,6 @@
 
     position: relative;
     z-index: -1;
-
-    scroll-snap-align: end;
-
 }
 
 /* #region Slideshow Canvas and Images Styling */
@@ -104,16 +101,11 @@ p.heading {
 
 /* #region Hero Buttons Styling */
 
-.hero-btn-container {
-    /* border-radius: 0.25rem;
-    background-color: #ffffff; */
-}
-
 .hero-button {
     padding: 0.5rem 2rem;
     
     color: #ffffff;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(175, 175, 175, 0.5);
     backdrop-filter: blur(5px);
     border: none;
     border-radius: 0.25rem;
@@ -121,7 +113,7 @@ p.heading {
     font-size: 1.25rem;
 
     cursor: pointer;
-
+    text-shadow: black 0 0 15px;
 }
 
 

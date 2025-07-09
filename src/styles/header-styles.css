@@ -4,12 +4,16 @@
     padding: 1rem 0;
 
     background: var(--light-mode-bg-color-primary);
+    backdrop-filter: blur(4px);
     transition: background 0.3s;
 
     position: fixed;
+    z-index: 99999;
     top: 0;
     left: 0;
     right: 0;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
     user-select: none;
 }
@@ -25,6 +29,8 @@
     backdrop-filter: blur(7px);
     color: var(--transparent-bg-font-color);
     transition: background 0.3s;
+
+    border: none;
 }
 
 .transparent-container a {

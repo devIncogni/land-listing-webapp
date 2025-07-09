@@ -1,0 +1,148 @@
+/* #region card container styling */
+
+.land-card-holder {
+    padding: 4rem 0;
+    background-color: inherit;
+}
+
+.card-heading {
+    text-align: center;
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.card-heading h2 {
+    font-size: 2.25rem;
+    font-family: 'Times New Roman', Times, serif;
+
+    line-height: 1.25;
+}
+
+
+.cards-container {
+    padding: 0 1rem;
+    margin: auto;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-content: center;
+    justify-items: center;
+}
+
+/* #endregion card container styling */
+
+/* #region Card Styling */
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: white;
+    height: 100%;
+}
+
+.card-img-holder {
+    position: relative;
+}
+
+.card-img-holder>img {
+    /* max-height: 190px; */
+    /* max-width: 340px; */
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.plot-size-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+
+    background-color: rgba(0, 150, 255, 0.5);
+    backdrop-filter: contrast(50%);
+
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+
+    color: white;
+}
+
+
+.card-text-holder {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    line-height: 1;
+}
+
+.card-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    /* line-height: 0.5; */
+}
+
+.card-location {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-price {
+    margin-bottom: 1rem;
+}
+
+.card-price>h4 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    margin-bottom: 1rem;
+}
+
+.tags > p {
+    background-color: rgba(215, 215, 215, 0.3);
+
+    color: rgb(50, 50, 50);
+
+    padding: 0.125rem 0.5rem;
+    border-radius: 1rem;
+    line-height: 1.25;
+}
+
+.tags>p:last-child {
+    background-color: rgba(215, 215, 215, 0.8);
+}
+
+.card-button-container {
+    width: 100%;
+}
+
+.card-button-container > button {
+    border: none;
+    width: 100%;
+    color: white;
+    background-color: hsl(205, 100%, 0%);
+
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+}
+
+.card-button-container > button > p {
+    line-height: 1.25;
+}
+
+/* #endregion Card Styling */
