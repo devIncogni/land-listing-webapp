@@ -5,3 +5,17 @@ async function getData() {
 }
 
 getData();
+
+function populateWithSkeletons() {
+  const cardTemplate = document.querySelector(".card-template");
+  const cardContainer = document.querySelector(".cards-container");
+
+  cardContainer.textContent = '';
+
+  for (let i = 0; i < 6; i += 1) {
+    const cloneCard = cardTemplate.cloneNode(true);
+    cardContainer.append(cloneCard);
+  }
+}
+
+populateWithSkeletons()
