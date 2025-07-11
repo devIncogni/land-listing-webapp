@@ -10,3 +10,4 @@ import "./styles/util-styles.css";
 import "./scripts/header";
 import "./scripts/loader";
 import "./scripts/slideshow";
+import "./scripts/cards"
