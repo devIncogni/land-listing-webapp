@@ -32,6 +32,8 @@
 
     justify-content: center;
     justify-items: stretch;
+
+    align-items: center;
 }
 
 .view-all-btn-container {
@@ -66,7 +68,7 @@
     border-radius: 0.75rem;
     overflow: hidden;
     background-color: white;
-    height: 100%;
+    height: fit-content;
 }
 
 .card-img-holder {
@@ -79,7 +81,6 @@
     align-items: flex-start;
     justify-content: flex-end;
 
-    background: url('../assets/hero-slideshow/1-bada-imambara-lucknow-up-attr-hero.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -87,15 +88,18 @@
 .card-img-holder>img {
     /* max-height: 190px; */
     /* max-width: 340px; */
-
+    /* z-index: 1; */
     object-fit: cover;
     object-position: center;
+
+    opacity: 0;
 }
 
 
 .plot-size-overlay {
     margin: 1rem;
     width: fit-content;
+    position: absolute;
     
     background-color: rgba(0, 150, 255, 0.5);
     backdrop-filter: contrast(50%);
