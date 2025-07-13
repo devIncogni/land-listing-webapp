@@ -136,6 +136,8 @@
 
     display: flex;
     gap: 0.25rem;
+
+    /* width: 0; */
 }
 
 .card-location>img {
@@ -143,7 +145,11 @@
     object-position: center;
 
     aspect-ratio: 1;
-    width: 0;
+    /* width: 0; */
+    max-width: 0;
+}
+
+.card-location>img.loaded-location {
     max-width: 0.875rem;
 }
 

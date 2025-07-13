@@ -23,6 +23,11 @@ function populateWithSkeletons() {
 populateWithSkeletons();
 
 async function fillData(card, dataObj) {
+  let cardImg = await import(`../assets/hero-slideshow/${dataObj.image}`);
+  cardImg = cardImg.default;
+
+  let locationImage = await import(`../assets/loaction.svg`);
+  locationImage = locationImage.default;
 
   const img = card.querySelector(".card-img-holder>img");
   const plotSize = card.querySelector("[data-plot-size]");
@@ -34,8 +39,9 @@ async function fillData(card, dataObj) {
   const tagsDiv = card.querySelector(".tags");
   const locationImg = card.querySelector(".card-location> img");
 
-  img.setAttribute("src", dataObj.image);
-  locationImg.setAttribute("src", "location.svg");
+  img.setAttribute("src", cardImg);
+  locationImg.setAttribute("src", locationImage);
+  locationImg.classList.add("loaded-location");
   plotSize.textContent = dataObj.plotSize;
   cardTitle.textContent = dataObj.cardTitle;
   cardLocation.textContent = dataObj.cardLocation;
@@ -75,4 +81,4 @@ async function populateSkeletons() {
   }
 }
 
-populateSkeletons()
+populateSkeletons();
