@@ -4,8 +4,6 @@ async function getData() {
   return data;
 }
 
-getData();
-
 function populateWithSkeletons() {
   const cardTemplate = document.querySelector(".card-template");
   const cardContainer = document.querySelector(".cards-container");
@@ -76,7 +74,7 @@ async function populateSkeletons() {
   for (let i = 0; i < 6; i += 1) {
     const currentCard = cards[i];
     const currentDataObj = data[i];
-    fillData(currentCard, currentDataObj);
+    await fillData(currentCard, currentDataObj);
     removeSkeletons(currentCard);
   }
 }
