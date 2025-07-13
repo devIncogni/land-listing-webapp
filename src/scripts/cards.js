@@ -1,10 +1,6 @@
+import data from "../property-cards.json";
 async function getData() {
-  let data = await fetch("property-cards.json");
-  data = await data.json();
-
-  let data2 = await import("../property-cards.json");
-
-  return data2;
+  return data;
 }
 
 function populateWithSkeletons() {
