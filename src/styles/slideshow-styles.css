@@ -80,13 +80,13 @@
 h1.heading {
     font-size: 3.4rem;
     line-height: 1.15;
-    font-family: 'Times New Roman', Times, serif;
-    /* letter-spacing: 0.125rem; */
+    font-family: "PT Serif", serif;
+
     color: #ffffff;
 }
 
 h2.heading {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "PT Serif", serif;
     color: #dddddd;
     font-size: 2.25rem;
     font-weight: normal;
@@ -103,14 +103,14 @@ p.heading {
 
 .hero-button {
     padding: 0.5rem 2rem;
-    
+
     color: #ffffff;
     background-color: rgba(175, 175, 175, 0.5);
     backdrop-filter: blur(5px);
     border: none;
     border-radius: 0.25rem;
 
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 
     cursor: pointer;
     text-shadow: black 0 0 15px;

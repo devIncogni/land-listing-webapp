@@ -2,7 +2,7 @@ import Rellax from "rellax";
 
 const parallaxSpeed = -7;
 
-Rellax('.hero-content');
+Rellax(".hero-content");
 let rellaxInstace = new Rellax(".slide-show-img.active", {
   speed: parallaxSpeed,
 });
