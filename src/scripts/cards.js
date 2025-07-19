@@ -3,13 +3,13 @@ async function getData() {
   return data;
 }
 
-function populateWithSkeletons() {
+function populateWithSkeletons(numberOfSkeletons = 6) {
   const cardTemplate = document.querySelector(".card-template");
   const cardContainer = document.querySelector(".cards-container");
 
   cardContainer.textContent = "";
 
-  for (let i = 0; i < 6; i += 1) {
+  for (let i = 0; i < numberOfSkeletons; i += 1) {
     const cloneCard = cardTemplate.cloneNode(true);
     cloneCard.classList.remove("card-template");
     cloneCard.classList.add(`card-${i + 1}`);
@@ -17,7 +17,6 @@ function populateWithSkeletons() {
   }
 }
 
-populateWithSkeletons();
 
 async function fillData(card, dataObj) {
   let cardImg = await import(`../assets/hero-slideshow/${dataObj.image}`);
@@ -66,11 +65,11 @@ function removeSkeletons(card) {
   });
 }
 
-async function populateSkeletons() {
+async function populateSkeletons(numberOfSkeletons = 6) {
   const cards = document.querySelectorAll(".card");
   const data = await getData();
 
-  for (let i = 0; i < 6; i += 1) {
+  for (let i = 0; i < numberOfSkeletons; i += 1) {
     const currentCard = cards[i];
     const currentDataObj = data[i];
     await fillData(currentCard, currentDataObj);
@@ -78,4 +77,5 @@ async function populateSkeletons() {
   }
 }
 
-populateSkeletons();
+populateWithSkeletons(3);
+populateSkeletons(3);
