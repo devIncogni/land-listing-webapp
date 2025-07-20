@@ -66,8 +66,6 @@ body {
     }
 }
 
-
-
 .skeleton-text,
 .skeleton-text:first-child {
     width: 100%;
@@ -82,6 +80,8 @@ body {
 }
 
 /* #endregion Skeleton Loading */
+
+/* #region general section styling */
 
 .general-section {
     padding-top: 4rem;
@@ -110,56 +110,4 @@ body {
     max-width: 1400px;
 }
 
-/* #region Why Choose Us Styling */
-.why-choose-us {
-    background-color: #f6f3ef;
-    padding: 4rem 0;
-}
-
-.why-choose-us-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 2rem;
-
-    justify-content: center;
-    justify-items: stretch;
-
-    align-items: center;
-}
-
-.why-choose-us-cards-container>.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    padding: 1.5rem;
-}
-
-.why-choose-us-card-icon {
-    /* margin-top: 1.5rem; */
-}
-
-.why-choose-us-card-icon>img {
-    object-fit: contain;
-    object-position: center;
-
-    width: 2.5rem;
-    /* aspect-ratio: 1; */
-}
-
-.why-choose-us-card-text {
-    padding-top: 1rem;
-}
-
-.why-choose-us-card-text>h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: #34402e;
-}
-
-.why-choose-us-card-text>p {
-    color: #4b5563;
-}
-
-/* #endregion Why Choose Us Styling */
+/* #endregion general section styling */
