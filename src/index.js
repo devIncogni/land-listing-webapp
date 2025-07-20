@@ -6,6 +6,7 @@ import "./styles/slideshow-styles.css";
 import "./styles/text-underline-animation.css";
 import "./styles/land-card-styles.css";
 import "./styles/why-choose-us.css";
+import "./styles/faq-styles.css"
 import "./styles/util-styles.css";
 // JS Imports
 import "./scripts/header";

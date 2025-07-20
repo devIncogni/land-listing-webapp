@@ -2,7 +2,7 @@ import faqData from "../faqs.json";
 import plusSVG from "../assets/faq/plus.svg";
 import minusSVG from "../assets/faq/minus.svg";
 
-function populateWithFaqs(numberOfFaqs = 100) {
+function populateWithFaqs(numberOfFaqs = 10) {
   const limit = Math.min(numberOfFaqs, faqData.length);
 
   const faqContainer = document.querySelector(".faq-container");
@@ -22,7 +22,7 @@ function populateWithFaqs(numberOfFaqs = 100) {
   }
 }
 
-populateWithFaqs();
+populateWithFaqs(7);
 
 const faqs = document.querySelectorAll(".faq-card");
 
