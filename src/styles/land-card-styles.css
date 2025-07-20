@@ -1,31 +1,27 @@
 /* #region card container styling */
 
-.land-card-holder {
+/* .land-card-holder {
     padding-top: 4rem;
     background-color: inherit;
-}
+} */
 
-.card-heading {
+/* .card-heading {
     text-align: center;
     width: 90%;
     max-width: 1400px;
     margin: auto;
     margin-bottom: 3rem;
-}
+} */
 
-.card-heading h2 {
+/* .card-heading h2 {
     font-size: 2.25rem;
     font-family: "PT Serif", serif;
 
     line-height: 1.25;
-}
+} */
 
 
 .cards-container {
-    padding: 0 1rem;
-    margin: auto;
-    max-width: 1400px;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;

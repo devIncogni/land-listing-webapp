@@ -82,3 +82,30 @@ body {
 }
 
 /* #endregion Skeleton Loading */
+
+.general-section {
+    padding-top: 4rem;
+    background-color: inherit;
+}
+
+
+.general-section-heading {
+    text-align: center;
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.general-section-heading>h2 {
+    font-size: 2.25rem;
+    font-family: "PT Serif", serif;
+
+    line-height: 1.25;
+}
+
+.general-section-subcontainer {
+    padding: 0 1rem;
+    margin: auto;
+    max-width: 1400px;
+}
