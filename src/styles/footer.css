@@ -1,0 +1,31 @@
+.footer {
+    margin-top: 1rem;
+    background-color: black;
+    color: white;
+    padding: 4rem 2rem;
+
+    /* min-height: 100lvh; */
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+}
+
+.footer-container > div {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    /* margin: 1rem 0; */
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
