@@ -12,13 +12,4 @@ import "./scripts/header";
 import "./scripts/loader";
 import "./scripts/slideshow";
 import "./scripts/cards";
-
-const faqs = document.querySelectorAll(".faq-card");
-
-faqs.forEach((faq) => {
-  const aElement = faq.querySelector("a");
-  const faqAns = faq.querySelector(".faq-answer");
-  aElement.addEventListener("click", () => {
-    faqAns.classList.toggle("show");
-  });
-});
+import "./scripts/faqs"
