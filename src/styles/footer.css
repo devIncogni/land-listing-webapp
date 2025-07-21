@@ -1,7 +1,7 @@
 .footer {
     margin-top: 1rem;
-    background-color: #1e1e1e;
-    color: #f9f9f9;
+    background-color: #0f1019;
+    color: #989ba8;
     padding-bottom: 4rem;
 }
 
@@ -12,13 +12,18 @@
     flex-wrap: wrap;
 
     align-items: center;
-    /* justify-content: center; */
+    /* justify-content: space-between; */
 }
 
 .creator-credit {
-    /* margin: auto; */
-    flex: 1;
-    text-align: center;
+    margin: auto;
+    /* flex: 1; */
+    /* text-align: center; */
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
 }
 
 .footer-heading-logo-text {
