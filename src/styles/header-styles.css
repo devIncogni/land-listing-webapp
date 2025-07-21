@@ -42,7 +42,7 @@
 }
 
 .transparent-container .logo-icon {
-    background: url(../assets/LMD-160x160.png);
+    background: url(../assets/LMD-white-small.png);
     background-size: contain;
 }
 
@@ -68,12 +68,12 @@
 
 .logo-icon {
 
-    background: url(../assets/LMD-160x160.png);
-    background-size: cover;
+    background: url(../assets/LMD-black-small.png);
+    background-size: contain;
     background-position: center;
 
-    width: 3rem;
-    aspect-ratio: 1;
+    width: 2.75rem;
+    aspect-ratio: 160/142;
 }
 
 .logo-text {
