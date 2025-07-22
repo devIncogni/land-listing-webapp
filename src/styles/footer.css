@@ -62,6 +62,8 @@
     gap: 2rem;
 
     margin: auto;
+
+    /* grid-column: 2; */
 }
 
 .footer-container>div {
@@ -78,18 +80,4 @@
 .footer a {
     text-decoration: none;
     color: inherit;
-}
-
-.footer-section-1 {
-    /* grid-column: 1/-1; */
-    /* grid-row: 1/2; */
-    /* align-self: center; */
-    /* justify-self: center; */
-}
-
-.footer-section-1-5 {
-
-    /* grid-column: 1/-1; */
-    /* grid-row: 2/3; */
-
 }
