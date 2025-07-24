@@ -1,0 +1,42 @@
+.general-section.misc-hero {
+    padding: 0 0;
+    min-height: 60lvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f1019;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.misc-hero .general-section-heading {
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.misc-hero .general-section-heading h2 {
+    font-size: clamp(2.75rem, 5vw, 3rem);
+}
+
+.our-story {
+    padding-bottom: 4rem;
+}
+
+.our-story .general-section-subcontainer {
+    max-width: 1000px;
+    text-align: justify;
+}
+
+.our-story .our-story-subheading {
+    font-size: 1.2rem;
+}
+
+.our-story .general-section-subcontainer p {
+    margin-bottom: 1.5rem;
+    color: #374151;
+}
+
+.our-values .general-section-subcontainer,
+.team .general-section-subcontainer {
+    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}

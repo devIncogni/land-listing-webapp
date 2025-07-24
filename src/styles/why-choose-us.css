@@ -16,13 +16,28 @@
 }
 
 .why-choose-us-cards-container>.card {
+
+    /* Compatibility */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: white;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Compatibility */
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 
-    padding: 1.5rem;
+    padding: 2.5rem 2.5rem;
     height: auto;
+}
+
+.why-choose-us-cards-container>.card:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .why-choose-us-card-icon>img {
@@ -40,10 +55,12 @@
     font-size: 1.25rem;
     margin-bottom: 1rem;
     color: #34402e;
+    text-align: center;
 }
 
 .why-choose-us-card-text>p {
     color: #4b5563;
+    text-align: justify;
 }
 
 /* #endregion Why Choose Us Styling */
