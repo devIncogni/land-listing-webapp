@@ -40,3 +40,8 @@
     max-width: 1000px;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
+
+.team .why-choose-us-card-icon>img {
+    width: 6rem;
+    border-radius: 50%;
+}

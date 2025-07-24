@@ -58,9 +58,19 @@
     text-align: center;
 }
 
+.why-choose-us-card-text>h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: -0.75rem;
+
+    color: hsl(100, 0%, 37%);
+
+}
+
+
 .why-choose-us-card-text>p {
     color: #4b5563;
-    text-align: justify;
+    text-align: center;
 }
 
 /* #endregion Why Choose Us Styling */
