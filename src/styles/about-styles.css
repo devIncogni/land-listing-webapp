@@ -41,6 +41,10 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
+.general-section.team {
+    background-color: inherit;
+}
+
 .team .why-choose-us-card-icon>img {
     width: 6rem;
     border-radius: 50%;
