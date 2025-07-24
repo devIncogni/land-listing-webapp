@@ -1,4 +1,5 @@
-.header-extended-menu-container {
+.header-extended-menu-container,
+.header-extended-menu-container.never-transparent {
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
@@ -18,9 +19,15 @@
     user-select: none;
 }
 
-.header-extended-menu-container a {
+.header-extended-menu-container a,
+.header-extended-menu-container.never-transparent a {
+
     text-decoration: none;
     color: var(--light-mode-bg-font-color);
+}
+
+.header-extended-menu-container.never-transparent {
+    position: sticky;
 }
 
 /* #region Styles when header is transparent */
@@ -66,7 +73,8 @@
     animation: header-animation 0.4s ease-in-out;
 }
 
-.logo-icon {
+.logo-icon,
+.header-extended-menu-container.never-transparent .logo-icon {
 
     background: url(../assets/LMD-black-small.png);
     background-size: contain;
@@ -127,7 +135,8 @@
     width: 27px;
 }
 
-.bar {
+.bar,
+.header-extended-menu-container.never-transparent .bar {
     height: 0.125rem;
     width: 100%;
     position: absolute;
