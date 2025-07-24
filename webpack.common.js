@@ -2,15 +2,31 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/index.js",
+    about: "./src/about.js",
+    contact: "./src/contact.js",
+  },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: "index.html",
       template: "./src/template.htm",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "about.html",
+      template: "./src/about.htm",
+      chunks: ["about"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: "./src/contact.htm",
+      chunks: ["contact"],
     }),
   ],
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    filename: "[name].js",
     clean: true,
   },
   module: {
