@@ -89,12 +89,14 @@
 }
 
 .map .general-section-subcontainer {
-    border: 0.25rem dashed black;
+    border: 2.5px dashed #676767;
+    border-radius: 0.75rem;
+    overflow: hidden;
     padding: 0;
     width: 95%;
 }
 
 #map-embed {
     aspect-ratio: 1/1.25;
-    height: 65vh;
+    height: 24rem;
 }

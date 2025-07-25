@@ -47,6 +47,8 @@ import Style from 'ol/style/Style';
 import Icon from 'ol/style/Icon';
 import Overlay from 'ol/Overlay';
 import Control from 'ol/control/Control';
+import locatorImage from "./assets/lmd-location.svg"
+
 
 // 🔹 Lucknow Coordinates
 const lon = 80.946167;
@@ -62,7 +64,7 @@ marker.setStyle(
   new Style({
     image: new Icon({
       anchor: [0.5, 1],
-      src: 'https://openlayers.org/en/latest/examples/data/icon.png',
+      src: locatorImage,
     }),
   })
 );
@@ -185,11 +187,11 @@ toggleControlElement.className = 'ol-unselectable ol-control';
 toggleControlElement.style.cssText = `
   background: white;
   border: 1px solid #ccc;
-  padding: 4px 8px;
+  padding: 0.25rem 0.75rem;
   margin-top: 8px;
   margin-left: 8px;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 0.85rem;
   cursor: pointer;
   user-select: none;
 `;
