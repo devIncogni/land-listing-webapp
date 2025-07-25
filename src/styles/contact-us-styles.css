@@ -74,7 +74,7 @@
     min-width: 24px;
 }
 
-.contact-text{
+.contact-text {
     color: #4b5563;
     text-decoration: none;
 }
@@ -89,8 +89,12 @@
 }
 
 .map .general-section-subcontainer {
-    border: 0.125rem dashed black;
+    border: 0.25rem dashed black;
     padding: 0;
-    width: 90%;
-    max-width: 1000px;
+    width: 95%;
+}
+
+#map-embed {
+    aspect-ratio: 1/1.25;
+    height: 65vh;
 }
