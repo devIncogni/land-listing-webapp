@@ -1,0 +1,83 @@
+.contact-info {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.contact-info .general-section-subcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+
+    max-width: 1000px;
+    justify-content: center;
+    justify-items: stretch;
+
+    align-items: stretch;
+}
+
+.contact-info-card {
+
+    /* Compatibility */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: #fcfbf8;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Compatibility */
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 2.5rem 1.5rem;
+    height: auto;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.contact-info-icon {
+    margin-top: 0.5rem;
+    align-self: baseline;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+}
+
+.office-adress .contact-info-icon {
+    background-color: rgb(230 235 228);
+
+}
+
+.call .contact-info-icon {
+    background-color: #f0ebe2;
+
+}
+
+.email-us .contact-info-icon {
+    background-color: #fdf8f0
+}
+
+.business-hours .contact-info-icon {
+    background-color: #e6ebe4;
+}
+
+.contact-info-icon img {
+    object-fit: contain;
+    object-position: center;
+
+    width: 1.5rem;
+    min-width: 24px;
+}
+
+.contact-text{
+    color: #4b5563;
+    text-decoration: none;
+}
+
+.contact-text h3 {
+    margin-bottom: 0.5rem;
+}
