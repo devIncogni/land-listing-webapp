@@ -7,14 +7,15 @@ import "./styles/text-underline-animation.css";
 import "./styles/land-card-styles.css";
 import "./styles/why-choose-us.css";
 import "./styles/faq-styles.css";
+import "./styles/all-listing-styles.css"
 import "./styles/footer.css";
 import "./styles/util-styles.css";
 // JS Imports
 import "./scripts/header";
 import "./scripts/loader";
-import "./scripts/slideshow";
+// import "./scripts/slideshow";
 import { populateSkeletons, populateWithSkeletons } from "./scripts/cards";
-import "./scripts/faqs";
+// import "./scripts/faqs";
 
-populateWithSkeletons(6);
-populateSkeletons(6);
+populateWithSkeletons(7);
+populateSkeletons(7);

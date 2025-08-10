@@ -6,6 +6,7 @@ module.exports = {
     index: "./src/index.js",
     about: "./src/about.js",
     contact: "./src/contact.js",
+    listings: "./src/listings.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -22,6 +23,11 @@ module.exports = {
       filename: "contact.html",
       template: "./src/contact.htm",
       chunks: ["contact"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "listings.html",
+      template: "./src/listings.htm",
+      chunks: ["listings"],
     }),
   ],
   output: {

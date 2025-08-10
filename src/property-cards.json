@@ -82,5 +82,19 @@
             "Test-1",
             "Test-2"
         ]
+    },
+    "6": {
+        "image": "1-bada-imambara-lucknow-up-attr-hero.jpg",
+        "plotSize": "1000 sq ft",
+        "cardTitle": "Premium Residential Plot",
+        "cardLocation": "Gomti Nagar",
+        "price": "₹45 lakh",
+        "plurality": "Per Plot",
+        "tags": [
+            "Nice Excerllent Well Maintained",
+            "Good",
+            "Test-1",
+            "Test-2"
+        ]
     }
 }

@@ -77,5 +77,7 @@ async function populateSkeletons(numberOfSkeletons = 6) {
   }
 }
 
-populateWithSkeletons(3);
-populateSkeletons(3);
+export {populateSkeletons, populateWithSkeletons}
+
+// populateWithSkeletons(3);
+// populateSkeletons(3);
