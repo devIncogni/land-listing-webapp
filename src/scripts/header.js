@@ -1,10 +1,24 @@
 function addHeaderTransparency() {
+  if (
+    document
+      .querySelector(".header-extended-menu-container")
+      .classList.contains("never-transparent")
+  ) {
+    return;
+  }
   document
     .querySelector(".header-extended-menu-container")
     .classList.add("transparent-container");
 }
 
 function removeHeaderTransparency() {
+  if (
+    document
+      .querySelector(".header-extended-menu-container")
+      .classList.contains("never-transparent")
+  ) {
+    return;
+  }
   document
     .querySelector(".header-extended-menu-container")
     .classList.remove("transparent-container");
