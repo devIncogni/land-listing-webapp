@@ -20,6 +20,39 @@
     grid-column: -1/-2;
 }
 
+/* #region plot details container */
+
+.plot-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.plot-images img {
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+    /* max-height: 10rem; */
+}
+
+.all-imgs {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.all-imgs img {
+    width: calc(33.33% - 0.66rem);
+    aspect-ratio: 21/9;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* #endregion plot details container */
+
+
 /* #region plot price details */
 
 .plot-price-container {
