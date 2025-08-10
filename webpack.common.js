@@ -7,6 +7,7 @@ module.exports = {
     about: "./src/about.js",
     contact: "./src/contact.js",
     listings: "./src/listings.js",
+    plotdetails: "./src/plotdetails.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -28,6 +29,11 @@ module.exports = {
       filename: "listings.html",
       template: "./src/listings.htm",
       chunks: ["listings"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "plotdetails.html",
+      template: "./src/plotdetails.htm",
+      chunks: ["plotdetails"],
     }),
   ],
   output: {

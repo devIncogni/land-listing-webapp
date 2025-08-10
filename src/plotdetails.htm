@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plot Vista</title>
+    <!-- Start Loader Styles -->
+    <style>
+      .loader-container {
+        position: fixed;
+        inset: 0;
+
+        background: rgb(255, 255, 255);
+        opacity: 1;
+
+        z-index: 99999;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition:
+          opacity 0.5s ease-in-out,
+          visibility 0.5s ease-in-out;
+      }
+
+      .loader-container.removed {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      .loader {
+        width: 45px;
+        aspect-ratio: 1;
+        --c: no-repeat linear-gradient(#000 0 0);
+        background:
+          var(--c) 0% 50%,
+          var(--c) 50% 50%,
+          var(--c) 100% 50%;
+        background-size: 20% 100%;
+        animation: l1 1s infinite linear;
+      }
+      @keyframes l1 {
+        0% {
+          background-size:
+            20% 100%,
+            20% 100%,
+            20% 100%;
+        }
+        33% {
+          background-size:
+            20% 10%,
+            20% 100%,
+            20% 100%;
+        }
+        50% {
+          background-size:
+            20% 100%,
+            20% 10%,
+            20% 100%;
+        }
+        66% {
+          background-size:
+            20% 100%,
+            20% 100%,
+            20% 10%;
+        }
+        100% {
+          background-size:
+            20% 100%,
+            20% 100%,
+            20% 100%;
+        }
+      }
+    </style>
+    <!-- End Loader Styles -->
+  </head>
+  <body>
+    <!-- #region Header -->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <div class="header-extended-menu-container transparent-container">
+      <div class="header">
+        <a href="./index.html" class="logo">
+          <div class="logo-icon">
+            <!-- <img src="./assets/logo.png" alt="company-logo"> -->
+          </div>
+          <div class="logo-text">
+            <p class="agency-name">Plot Vista</p>
+            <p class="punch-line">Lucknow Land Specialists</p>
+          </div>
+        </a>
+        <div class="nav-links">
+          <div class="links"><a href="./index.html">Home</a></div>
+          <div class="links"><a href="./listings.html">All Listings</a></div>
+          <div class="links"><a href="./about.html">About Us</a></div>
+          <div class="links"><a href="./contact.html">Contact</a></div>
+        </div>
+        <a href="javascript: void(0)" class="hamburger-menu">
+          <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </a>
+      </div>
+      <div class="extended-menu">
+        <div class="extended-menu-padding">
+          <!-- <div class="links-container"> -->
+          <a href="./index.html"><div class="links">Home</div></a>
+          <a href="./listings.html"><div class="links">All Listings</div></a>
+          <a href="./about.html"><div class="links">About Us</div></a>
+          <a href="./contact.html"><div class="links">Contact</div></a>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- #endregion Header -->
+
+    <!-- #region Footer -->
+    <div class="footer general-section">
+      <div class="footer-heading">
+        <div class="footer-heading-logo-text">
+          <img src="./assets/LMD-grey-footer.png" alt="LMD" />
+          <div class="footer-heading-text">
+            <h2>Lucknow</h2>
+            <h2>Motherland</h2>
+            <h2>Developers.</h2>
+          </div>
+        </div>
+
+        <div class="creator-credit">
+          <p>Powered by</p>
+          <a target="_blank" href="https://www.github.com/devIncogni">
+            <h2>&lt/devIncogni&gt</h2>
+          </a>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-section-1">
+          <h4>Contact Info</h4>
+          <p>Lucknow, Uttar Pradesh</p>
+          <p>+91 98765 43210</p>
+          <p>info@plotvista.com</p>
+        </div>
+
+        <div class="footer-section-1-5">
+          <h4>Opening Hours:</h4>
+
+          <p>8:00-17:00</p>
+          <p>Closed on Weekends</p>
+        </div>
+        <div class="footer-section-2">
+          <h4>Site Map</h4>
+
+          <a href="./index.html">Home</a>
+          <a href="./listings.html">All Listings</a>
+          <a href="./about.html">About Us</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="footer-section-3">
+          <h4>Legal</h4>
+          <p>Terms of use</p>
+          <p>Privacy Policy</p>
+          <p>Data Storage</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion Footer -->
+  </body>
+</html>
