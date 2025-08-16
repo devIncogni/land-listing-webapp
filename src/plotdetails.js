@@ -21,7 +21,17 @@ import MapIntegration from "./scripts/map";
 // import plotData from "./plot-details.json";
 
 import plotData from "./plot-details.json";
-MapIntegration(plotData[0].coords.latitude, plotData[0].coords.longitude);
+
+const params = new URLSearchParams(window.location.search);
+let plotId = parseInt(params.get("id"), 10);
+
+if (isNaN(plotId) || plotId < 0 || plotId >= plotData.length) {
+  plotId = 0;
+}
+
+plotId = 0;
+
+MapIntegration(plotData[plotId].coords.latitude, plotData[plotId].coords.longitude);
 
 // fillData function
 async function fillData(id) {
@@ -158,7 +168,7 @@ async function fillData(id) {
 }
 
 // Example usage: fill data for plot with id=0
-await fillData(0);
+await fillData(plotId);
 
 function setupImageSwitcher() {
   const currentImg = document.querySelector(".current-img img");

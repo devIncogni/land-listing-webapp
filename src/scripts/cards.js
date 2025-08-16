@@ -17,7 +17,6 @@ function populateWithSkeletons(numberOfSkeletons = 6) {
   }
 }
 
-
 async function fillData(card, dataObj) {
   let cardImg = await import(`../assets/hero-slideshow/${dataObj.image}`);
   cardImg = cardImg.default;
@@ -72,12 +71,19 @@ async function populateSkeletons(numberOfSkeletons = 6) {
   for (let i = 0; i < numberOfSkeletons; i += 1) {
     const currentCard = cards[i];
     const currentDataObj = data[i];
+
+    currentCard.dataset.id = i;
+    const btn = currentCard.querySelector(".card-button-container");
+    if (btn) {
+      btn.setAttribute("href", `../plotdetails.html?id=${i}`);
+    }
+
     await fillData(currentCard, currentDataObj);
     removeSkeletons(currentCard);
   }
 }
 
-export {populateSkeletons, populateWithSkeletons}
+export { populateSkeletons, populateWithSkeletons };
 
 // populateWithSkeletons(3);
 // populateSkeletons(3);
