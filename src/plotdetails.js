@@ -53,13 +53,16 @@ async function fillData(id) {
     );
     currentImgSrc = currentImgSrc.default;
     currentImg.src = currentImgSrc;
-    data.images.forEach(async (img) => {
+
+    const imagePromises = data.images.map(async (img) => {
       let currentImgSrc = await import(`./assets/hero-slideshow/${img}`);
       currentImgSrc = currentImgSrc.default;
       const imgEl = document.createElement("img");
       imgEl.src = currentImgSrc;
       allImgsContainer.appendChild(imgEl);
     });
+
+    await Promise.all(imagePromises);
   }
 
   // =====================
@@ -150,7 +153,33 @@ async function fillData(id) {
   // Append to parent
   parent.appendChild(cloneSection);
   parent.appendChild(priceContainer);
+
+  setupImageSwitcher();
 }
 
 // Example usage: fill data for plot with id=0
-fillData(0);
+await fillData(0);
+
+function setupImageSwitcher() {
+  const currentImg = document.querySelector(".current-img img");
+  const thumbnails = document.querySelectorAll(".all-imgs img");
+
+  console.log(currentImg);
+  console.log(thumbnails);
+
+  thumbnails.forEach((thumb) => {
+    thumb.addEventListener("click", () => {
+      // Change main image
+      currentImg.src = thumb.src;
+
+      // Highlight active thumbnail
+      thumbnails.forEach((t) => t.classList.remove("active-thumb"));
+      thumb.classList.add("active-thumb");
+    });
+  });
+
+  // Default highlight first image
+  if (thumbnails.length > 0) {
+    thumbnails[0].classList.add("active-thumb");
+  }
+}
