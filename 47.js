@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktemplate_repo_web_dev=self.webpackChunktemplate_repo_web_dev||[]).push([[47],{8047:(e,p,a)=>{e.exports=a.p+"38ba10a0f1aab6e02e8d.svg"}}]);
