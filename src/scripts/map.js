@@ -15,7 +15,7 @@ import Overlay from "ol/Overlay";
 import Control from "ol/control/Control";
 import locatorImage from "../assets/lmd-location.svg";
 
-const MapIntegration = (lon = 80.946167, lat = 26.846695) => {
+const MapIntegration = (lat = 26.846695, lon = 80.946167) => {
   const coordinates = fromLonLat([lon, lat]);
 
   // #region Map Script

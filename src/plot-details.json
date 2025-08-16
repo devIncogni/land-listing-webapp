@@ -1,0 +1,45 @@
+[
+    {
+        "images": [
+            "1-bada-imambara-lucknow-up-attr-hero.jpg",
+            "2-rumi-darwaza-lucknow-uttar-pradesh-attr-hero.jpg",
+            "3-jama-masjid-lucknow-uttar-pradesh-attr-hero.jpg"
+        ],
+        "title": "Premium Residential Plot",
+        "location": "Gomti Nagar Extension, Lucknow",
+        "plotSize": "1000",
+        "totalPrice": "45",
+        "unitPrice": "4,500",
+        "customInfoCard": [
+            "Ready",
+            "Possession"
+        ],
+        "keyFeatures": [
+            "Clear Title",
+            "Gated Community",
+            "Near Metro",
+            "Park View",
+            "24/7 Security",
+            "Wide Roads"
+        ],
+        "specs": {
+            "Plot Area": "1000 sq ft",
+            "Plot Type": "Residential",
+            "Facing": "East",
+            "Road Width": "40 feet",
+            "Boundary Wall": "Constructed",
+            "Electricity": "Available",
+            "Water Supply": "Municipal + Borewell"
+        },
+        "landmarks": {
+            "Metro Station": "0.5km",
+            "Phoenix Mall": "1km",
+            "RML Hospital": "2km",
+            "Airport": "15km"
+        },
+        "coords": {
+            "latitude": "26.846695",
+            "longitude": "80.946167"
+        }
+    }
+]

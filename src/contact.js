@@ -5,7 +5,7 @@ import "./styles/header-styles.css";
 import "./styles/contact-us-styles.css";
 import "./styles/text-underline-animation.css";
 import "./styles/why-choose-us.css";
-import "./styles/map-styles.css"
+import "./styles/map-styles.css";
 import "./styles/footer.css";
 import "./styles/util-styles.css";
 // JS Imports
@@ -14,4 +14,4 @@ import "./scripts/loader";
 // import "./scripts/map"
 import MapIntegration from "./scripts/map";
 
-MapIntegration(81.5165, 26.2837);
+MapIntegration(26.2837, 81.5165);
