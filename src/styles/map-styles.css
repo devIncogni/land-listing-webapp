@@ -1,0 +1,17 @@
+.map {
+    background-color: #f4f6f3;
+    padding: 4rem 0;
+}
+
+.map .general-section-subcontainer {
+    border: 2.5px dashed #676767;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    padding: 0;
+    width: 95%;
+}
+
+#map-embed {
+    aspect-ratio: 1/1.25;
+    height: 24rem;
+}

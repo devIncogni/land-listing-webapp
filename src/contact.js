@@ -5,6 +5,7 @@ import "./styles/header-styles.css";
 import "./styles/contact-us-styles.css";
 import "./styles/text-underline-animation.css";
 import "./styles/why-choose-us.css";
+import "./styles/map-styles.css"
 import "./styles/footer.css";
 import "./styles/util-styles.css";
 // JS Imports
