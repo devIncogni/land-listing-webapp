@@ -75,7 +75,7 @@ async function populateSkeletons(numberOfSkeletons = 6) {
     currentCard.dataset.id = i;
     const btn = currentCard.querySelector(".card-button-container");
     if (btn) {
-      btn.setAttribute("href", `../plotdetails.html?id=${i}`);
+      btn.setAttribute("href", `plotdetails.html?id=${i}`);
     }
 
     await fillData(currentCard, currentDataObj);
