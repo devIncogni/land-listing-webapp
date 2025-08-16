@@ -1,3 +1,7 @@
+.general-section {
+    padding-top: 2rem;
+}
+
 .individual-plot-details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,7 +55,7 @@
 .plot-basic-info {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .plot-basic-info>h2 {
@@ -62,6 +66,7 @@
 }
 
 .plot-location {
+    margin-top: -1rem;
     display: flex;
     gap: 0.5rem;
     color: #4b5563;
@@ -71,7 +76,7 @@
     width: 20px;
 }
 
-.plot-info-cards{
+.plot-info-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1rem;
@@ -90,7 +95,7 @@
     font-size: 1.5rem;
 }
 
-.key-features {
+.key-features, .specifications, .nearby-landmarks {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -102,7 +107,7 @@
 
 .key-features-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1rem;
 }
 
@@ -123,6 +128,26 @@
     border-radius: 50%;
     background-color: black;
 }
+
+.specs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 1rem;
+}
+
+.specs {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+
+    border-bottom: 1px solid #cdc9c3 ;
+}
+
+.landmark {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* #endregion plot details container */
 
 
@@ -211,5 +236,11 @@
     .plot-price-container {
         position: sticky;
         top: 5rem;
+    }
+}
+
+@media (width <= 500px){
+    .key-features-container {
+        grid-template-columns: repeat(2, minmax(0,1fr));
     }
 }
