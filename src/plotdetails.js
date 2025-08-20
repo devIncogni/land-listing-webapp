@@ -29,7 +29,7 @@ if (isNaN(plotId) || plotId < 0 || plotId >= plotData.length) {
   plotId = 0;
 }
 
-plotId = 0;
+// plotId = 0;
 
 MapIntegration(plotData[plotId].coords.latitude, plotData[plotId].coords.longitude);
 

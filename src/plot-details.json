@@ -9,12 +9,12 @@
         "location": "Gomti Nagar Extension, Lucknow",
         "plotSize": "1000",
         "totalPrice": "45",
-        "unitPrice": "4,500",
+        "unitPrice": "4500",
         "customInfoCard": [
             "Ready",
             "Possession"
         ],
-        "about": "This premium residential plot is located in the heart of Gomti Nagar Extension, one of Lucknow's most prestigious residential areas. The plot offers excellent connectivity to major landmarks and is surrounded by upscale residential developments.",
+        "about": "This premium residential plot is located in the heart of Gomti Nagar Extension, one of Lucknow's most prestigious residential areas.",
         "keyFeatures": [
             "Clear Title",
             "Gated Community",
@@ -34,13 +34,183 @@
         },
         "landmarks": {
             "Metro Station": "0.5km",
-            "Phoenix Mall": "1km",
-            "RML Hospital": "2km",
+            "Mall": "1km",
+            "Hospital": "2km",
             "Airport": "15km"
         },
         "coords": {
             "latitude": "26.846695",
             "longitude": "80.946167"
+        }
+    },
+    {
+        "images": [
+            "1-bada-imambara-lucknow-up-attr-hero.jpg",
+            "2-rumi-darwaza-lucknow-uttar-pradesh-attr-hero.jpg",
+            "3-jama-masjid-lucknow-uttar-pradesh-attr-hero.jpg"
+        ],
+        "title": "Awadh Aasara",
+        "location": "Ganeshpur Rahmanpur, Chinhat, Lucknow",
+        "plotSize": "800",
+        "totalPrice": "25.6",
+        "unitPrice": "3200",
+        "customInfoCard": [
+            "Ready",
+            "Possession"
+        ],
+        "about": "This premium residential plot is located in the heart of Gomti Nagar Extension, one of Lucknow's most prestigious residential areas.",
+        "keyFeatures": [
+            "Clear Title",
+            "Gated Community",
+            "Park View",
+            "24/7 Security",
+            "Wide Roads"
+        ],
+        "specs": {
+            "Plot Area": "800 sq ft",
+            "Plot Type": "Residential",
+            "Facing": "East",
+            "Road Width": "25 feet",
+            "Boundary Wall": "Constructed",
+            "Electricity": "Available",
+            "Water Supply": "Municipal + Borewell"
+        },
+        "landmarks": {
+            "Metro Station": "4km",
+            "Mall": "900m",
+            "Hospital": "2km",
+            "Airport": "25km"
+        },
+        "coords": {
+            "latitude": "26.846696",
+            "longitude": "80.946168"
+        }
+    },
+    {
+        "images": [
+            "1-bada-imambara-lucknow-up-attr-hero.jpg",
+            "2-rumi-darwaza-lucknow-uttar-pradesh-attr-hero.jpg",
+            "3-jama-masjid-lucknow-uttar-pradesh-attr-hero.jpg"
+        ],
+        "title": "Shanti Upwan",
+        "location": "Dhawa,Chinhat,Deva Road, Lucknow",
+        "plotSize": "800",
+        "totalPrice": "21.6",
+        "unitPrice": "2700",
+        "customInfoCard": [
+            "Ready",
+            "Possession"
+        ],
+        "about": "This premium residential plot is located in the heart of Gomti Nagar Extension, one of Lucknow's most prestigious residential areas.",
+        "keyFeatures": [
+            "Clear Title",
+            "Gated Community",
+            "Park View",
+            "24/7 Security",
+            "Wide Roads"
+        ],
+        "specs": {
+            "Plot Area": "800 sq ft",
+            "Plot Type": "Residential",
+            "Facing": "East",
+            "Road Width": "25 feet",
+            "Boundary Wall": "Constructed",
+            "Electricity": "Available",
+            "Water Supply": "Municipal + Borewell"
+        },
+        "landmarks": {
+            "Metro Station": "7km",
+            "Mall": "2km",
+            "Hospital": "1km",
+            "Airport": "25km"
+        },
+        "coords": {
+            "latitude": "26.846697",
+            "longitude": "80.946169"
+        }
+    },
+    {
+        "images": [
+            "1-bada-imambara-lucknow-up-attr-hero.jpg",
+            "2-rumi-darwaza-lucknow-uttar-pradesh-attr-hero.jpg",
+            "3-jama-masjid-lucknow-uttar-pradesh-attr-hero.jpg"
+        ],
+        "title": "Shanti Upwan 2",
+        "location": "Barethi, deva Road, Barabanki",
+        "plotSize": "800",
+        "totalPrice": "8",
+        "unitPrice": "1000",
+        "customInfoCard": [
+            "Ready",
+            "Possession"
+        ],
+        "about": "This premium residential plot is located in the heart of Gomti Nagar Extension, one of Lucknow's most prestigious residential areas.",
+        "keyFeatures": [
+            "Clear Title",
+            "Gated Community",
+            "Park View",
+            "24/7 Security",
+            "Wide Roads"
+        ],
+        "specs": {
+            "Plot Area": "800 sq ft",
+            "Plot Type": "Invesment",
+            "Facing": "East",
+            "Road Width": "25 feet",
+            "Boundary Wall": "Constructed",
+            "Electricity": "Available",
+            "Water Supply": "Borewell"
+        },
+        "landmarks": {
+            "Metro Station": "15km",
+            "Hospital": "5km",
+            "Airport": "35km"
+        },
+        "coords": {
+            "latitude": "26.846698",
+            "longitude": "80.946170"
+        }
+    },
+    {
+        "images": [
+            "1-bada-imambara-lucknow-up-attr-hero.jpg",
+            "2-rumi-darwaza-lucknow-uttar-pradesh-attr-hero.jpg",
+            "3-jama-masjid-lucknow-uttar-pradesh-attr-hero.jpg"
+        ],
+        "title": "Elite Green City",
+        "location": "Mati, Near Ramswaroop University, Barabnki",
+        "plotSize": "800",
+        "totalPrice": "15.2",
+        "unitPrice": "1900",
+        "customInfoCard": [
+            "Ready",
+            "Possession"
+        ],
+        "about": "This premium residential plot is located in the heart of Gomti Nagar Extension, one of Lucknow's most prestigious residential areas.",
+        "keyFeatures": [
+            "Clear Title",
+            "Gated Community",
+            "Park View",
+            "24/7 Security",
+            "Wide Roads"
+        ],
+        "specs": {
+            "Plot Area": "800 sq ft",
+            "Plot Type": "Residential",
+            "Facing": "East",
+            "Road Width": "40,25 feet",
+            "Boundary Wall": "Constructed",
+            "Electricity": "Available",
+            "Water Supply": "Borewell"
+        },
+        "landmarks": {
+            "Metro Station": "14km",
+            "Hospital": "6km",
+            "Airport": "35km"
+        },
+        "coords": {
+            "latitude": "26.846699",
+            "longitude": "80.946171"
         }
     }
 ]

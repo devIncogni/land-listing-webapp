@@ -1,4 +1,4 @@
-import data from "../property-cards.json";
+import data from "../plot-details.json";
 async function getData() {
   return data;
 }
@@ -18,8 +18,11 @@ function populateWithSkeletons(numberOfSkeletons = 6) {
 }
 
 async function fillData(card, dataObj) {
-  let cardImg = await import(`../assets/hero-slideshow/${dataObj.image}`);
+  let cardImg = await import(`../assets/hero-slideshow/${dataObj.images[0]}`);
   cardImg = cardImg.default;
+
+  console.log(dataObj.plotSize);
+  
 
   let locationImage = await import(`../assets/loaction.svg`);
   locationImage = locationImage.default;
@@ -37,18 +40,18 @@ async function fillData(card, dataObj) {
   img.setAttribute("src", cardImg);
   locationImg.setAttribute("src", locationImage);
   locationImg.classList.add("loaded-location");
-  plotSize.textContent = dataObj.plotSize;
-  cardTitle.textContent = dataObj.cardTitle;
-  cardLocation.textContent = dataObj.cardLocation;
-  price.textContent = dataObj.price;
-  plurality.textContent = dataObj.plurality;
+  plotSize.textContent = `${dataObj.plotSize} sq ft`;
+  cardTitle.textContent = dataObj.title;
+  cardLocation.textContent = dataObj.location;
+  price.textContent = `₹${dataObj.totalPrice} Lakh`;
+  plurality.textContent = "Per Plot";
   btn.textContent = "View Details";
 
   for (let i = 0; i < 3; i += 1) {
     const tag = document.createElement("p");
-    tag.textContent = dataObj.tags[i];
+    tag.textContent = dataObj.keyFeatures[i];
     if (i === 2) {
-      tag.textContent = `+${dataObj.tags.length - i} More`;
+      tag.textContent = `+${dataObj.keyFeatures.length - i} More`;
     }
     tagsDiv.append(tag);
   }
@@ -67,7 +70,6 @@ function removeSkeletons(card) {
 async function populateSkeletons(numberOfSkeletons = 6) {
   const cards = document.querySelectorAll(".card");
   const data = await getData();
-
   for (let i = 0; i < numberOfSkeletons; i += 1) {
     const currentCard = cards[i];
     const currentDataObj = data[i];

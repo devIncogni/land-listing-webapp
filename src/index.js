@@ -16,5 +16,5 @@ import "./scripts/slideshow";
 import { populateSkeletons, populateWithSkeletons } from "./scripts/cards";
 import "./scripts/faqs";
 
-populateWithSkeletons(6);
-populateSkeletons(6);
+populateWithSkeletons(4);
+populateSkeletons(4);

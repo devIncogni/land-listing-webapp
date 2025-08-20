@@ -17,5 +17,5 @@ import "./scripts/loader";
 import { populateSkeletons, populateWithSkeletons } from "./scripts/cards";
 // import "./scripts/faqs";
 
-populateWithSkeletons(7);
-populateSkeletons(7);
+populateWithSkeletons(4);
+populateSkeletons(4);
